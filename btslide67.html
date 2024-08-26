@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đại học UEH</title>
+    <style>
+        @keyframes textShadowMultiColor {
+            0% {
+                text-shadow: 2px 2px 2px #ff00ff, -2px -2px 2px #00ffff;
+            }
+
+            50% {
+                text-shadow: 2px 2px 2px #00ffff, -2px -2px 2px #ff00ff;
+            }
+
+            100% {
+                text-shadow: 2px 2px 2px #ff00ff, -2px -2px 2px #00ffff;
+            }
+        }
+
+        @keyframes slideInEllipticRightBck {
+            0% {
+                transform: translateX(1000px) rotateZ(30deg);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0) rotateZ(0);
+                opacity: 1;
+            }
+        }
+
+        .text-effect {
+            font-size: 40px;
+            font-weight: bold;
+            color: #3399FF;
+            animation: slideInEllipticRightBck 5s ease-in-out infinite, textShadowMultiColor 5s infinite;
+            animation-delay: 0s, 5s;
+            /* Hiệu ứng slide chạy trước rồi đến shadow */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-effect">Đại học UEH</div>
+</body>
+
+</html>
